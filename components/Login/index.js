@@ -51,7 +51,7 @@ export default function Componente(){
           contentStyle={{padding: 5}}
           onPress={() => handleAuth(user, senha)}
         >
-          <Text style={{fontSize: 18, fontWeight: 'bolder', color: colors?.primary}}>ENTRAR</Text>
+          <Text style={{fontSize: 18, fontWeight: 'bold', color: colors?.primary}}>ENTRAR</Text>
         </Button>
       </View>
       <Snackbar
@@ -60,7 +60,7 @@ export default function Componente(){
         duration={1000}
         style={{backgroundColor: '#F00'}}
       >
-        <Text style={{fontSize: 18, fontWeight: 'bolder'}}>Usuário ou senha inválidos !</Text>
+        <Text style={{fontSize: 18, fontWeight: 'bold'}}>Usuário ou senha inválidos !</Text>
       </Snackbar>
     </View>
   )

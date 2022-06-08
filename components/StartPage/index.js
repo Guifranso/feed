@@ -32,7 +32,7 @@ export default function Componente(){
           contentStyle={{padding: 5}}
           onPress={() => navigate('Register')}
         >
-          <Text style={{fontSize: 18, fontWeight: 'bolder', color: colors?.accent}}>REGISTRAR - SE</Text>
+          <Text style={{fontSize: 18, fontWeight: 'bold', color: colors?.accent}}>REGISTRAR - SE</Text>
         </Button>
         <Button
           mode="contained"
@@ -41,7 +41,7 @@ export default function Componente(){
           contentStyle={{padding: 5}}
           onPress={() => navigate('Login')}
         >
-          <Text style={{fontSize: 18, fontWeight: 'bolder', color: colors?.primary}}>ENTRAR</Text>
+          <Text style={{fontSize: 18, fontWeight: 'bold', color: colors?.primary}}>ENTRAR</Text>
         </Button>
       </View>
     </View>

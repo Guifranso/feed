@@ -51,7 +51,7 @@ export default function Componente(){
           contentStyle={{padding: 5}}
           onPress={() => handleRegister(user, senha)}
         >
-          <Text style={{fontSize: 18, fontWeight: 'bolder', color: colors?.primary}}>CADASTRAR</Text>
+          <Text style={{fontSize: 18, fontWeight: 'bold', color: colors?.primary}}>CADASTRAR</Text>
         </Button>
       </View>
       <Snackbar
@@ -60,7 +60,7 @@ export default function Componente(){
         duration={1000}
         style={{backgroundColor: '#F00'}}
       >
-        <Text style={{fontSize: 18, fontWeight: 'bolder'}}>Nome de usuário indisponível !</Text>
+        <Text style={{fontSize: 18, fontWeight: 'bold'}}>Nome de usuário indisponível !</Text>
       </Snackbar>
     </View>
   )

@@ -138,8 +138,8 @@ export default function IndexProvider({ children }) {
   const [theme,                setTheme               ] = useState()
   const [selectedChat,         setSelectedChat        ] = useState()
   const [selectedGroup,        setSelectedGroup       ] = useState()
-  const [logged,               setLogged              ] = useState(!!localStorage.getItem('user'))
-  const [loggedProfile,        setLoggedProfile       ] = useState(users?.filter(e => e?.id.toString() === localStorage.getItem('user')).pop() || null)
+  const [logged,               setLogged              ] = useState(false)
+  const [loggedProfile,        setLoggedProfile       ] = useState()
   const [wrongInfo,            setWrongInfo           ] = useState(false)
   const [openMenu,             setOpenMenu            ] = useState(false)
   const [darkMode,             setDarkMode            ] = useState(true)
@@ -214,7 +214,6 @@ export default function IndexProvider({ children }) {
       if (val.user === user && val.senha === senha) {
         await setLogged(true)
         setLoggedProfile(val)
-        localStorage.setItem('user', val?.id)
         navigate('Home')
       } else {
         setWrongInfo(true)
@@ -241,14 +240,16 @@ export default function IndexProvider({ children }) {
   const logout = () => {
     setLogged(false)
     setLoggedProfile()
-    localStorage.removeItem('user')
     setOpenMenu(false)
     navigate('StartPage')
   }
 
   const route = currentRoute?.name
 
-  useEffect(() => route === 'Home' && setNewPost(false), [route])
+  useEffect(() => {
+    route === 'Home' && setNewPost(false);
+    setSearchingChat(false)
+  }, [route])
   useEffect(() => loggedProfile && navigate('Home'), [])
 
   return (

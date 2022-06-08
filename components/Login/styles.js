@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     },
     logoText: {
         fontSize: 50,
-        fontWeight: 'bolder',
+        fontWeight: 'bold',
         paddingBottom: 15,
         fontStyle: 'italic'
     },
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     },
     login: {
       fontSize: 30,
-      fontWeight: 'bolder',
+      fontWeight: 'bold',
       paddingVertical: 15,
       marginBottom: 15,
       alignSelf: 'center',

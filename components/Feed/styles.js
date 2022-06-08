@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     fontSize: 20,
-    fontWeight: 'bolder',
+    fontWeight: 'bold',
     paddingBottom: 15,
     fontStyle: 'italic'
   },

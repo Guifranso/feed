@@ -171,7 +171,7 @@ export default function Componente(){
             setOpenChangeBackground(false)
           }}
         >
-          <Text style={{fontSize: 18, fontWeight: 'bolder'}}>ALTERAR</Text>
+          <Text style={{fontSize: 18, fontWeight: 'bold'}}>ALTERAR</Text>
         </Button>
       </Modal>
       <Modal
@@ -230,7 +230,7 @@ export default function Componente(){
           color={colors?.accent}
           onPress={() => createGroup(groupName, groupMembers)}
         >
-          <Text style={{fontSize: 18, fontWeight: 'bolder'}}>CRIAR GRUPO</Text>
+          <Text style={{fontSize: 18, fontWeight: 'bold'}}>CRIAR GRUPO</Text>
         </Button>
       </Modal>
     </View>

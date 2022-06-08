@@ -45,7 +45,7 @@ export default function Componente(){
          contentStyle={{flexDirection: 'row-reverse', padding: 5}}
          onPress={handlePost}
        >
-         <Text style={{fontSize: 18, fontWeight: 'bolder', color: colors?.primary}}>POSTAR</Text>
+         <Text style={{fontSize: 18, fontWeight: 'bold', color: colors?.primary}}>POSTAR</Text>
        </Button>
      </View>
      <Snackbar
@@ -54,7 +54,7 @@ export default function Componente(){
        duration={1000}
        style={{backgroundColor: colors?.accent}}
      >
-       <Text style={{fontSize: 18, fontWeight: 'bolder'}}>Postagem realizada com sucesso !</Text>
+       <Text style={{fontSize: 18, fontWeight: 'bold'}}>Postagem realizada com sucesso !</Text>
      </Snackbar>
    </View>
  );

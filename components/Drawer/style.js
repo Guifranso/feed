@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
 
     },
     menuItemText: {
-        fontWeight: 'bolder',
+        fontWeight: 'bold',
         fontSize: 20,
     }
 });

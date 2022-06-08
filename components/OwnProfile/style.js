@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   },
   infoText: {
     fontSize: 18,
-    fontWeight: 'bolder',
+    fontWeight: 'bold',
   },
   text: {
     width: '100%',
